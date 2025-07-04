@@ -47,7 +47,7 @@
 					<li><a href="#intro">Intro</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#resumeCV">CV</a></li>
-					<!-- <li><a href="#contact">Contact</a></li> -->
+					<li><a href="#contact">Contact</a></li>
 					<!-- <li><a href="#elements">Elements</a></li> -->
 				</ul>
 			</nav>
@@ -114,6 +114,19 @@ plusieurs projets.				</text>
 								</p>
 						</div>
 											</div>
+                        <div class="row">
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">plateforme gestion oeuvres sociales</h3>
+								<img class="cardImg" src="images/social.jpg" alt="">
+								<p class="portfoliop">
+									http://www.cwoste-sba.dz
+								</p>
+								<p class="portfoliop">
+								
+							</div>
+						</div>
+
 				</container>
 				<h2 class="major rHeader">Autres Projets</h2>
 				
@@ -131,20 +144,6 @@ plusieurs projets.				</text>
 								
 							</div>
 						</div>
-<div class="row">
-						<div class="topColumn">
-							<div class="outline">
-								<h3 class="cardTitle">plateforme gestion oeuvres sociales</h3>
-								<img class="cardImg" src="images/social.jpg" alt="">
-								<p class="portfoliop">
-									http://www.cwoste-sba.dz
-								</p>
-								<p class="portfoliop">
-								
-							</div>
-						</div>
-
-                    
 			</article>
 
 			<!-- Resume -->
@@ -173,12 +172,6 @@ plusieurs projets.				</text>
 							Développeur Web Full-Stack avec certificat en Spécialité React<br>
 							<i>Admis en 3ème Cycle IPA -Informatique programmation et Application-Université Léonard Di Vinci Paris</i>
 						</li>
-						<!-- <li>
-							<a href="https://www.amazon.com/dp/1951791479?psc=1&ref=ppx_yo2_dt_b_product_details" target="_blank">Learn JavaScript Quickly <i>by Code Quickly</i></a>
-						</li>
-						<li>
-							<a href="https://www.amazon.com/dp/1798752980?psc=1&ref=ppx_yo2_dt_b_product_details#detailBullets_feature_div" target="_blank">React Explained: Your Step-by-Step Guide to React (2020 Edition) <i>by Zac Gordon</i></a>
-						</li> -->
 					</ul>
 				<h2 class="major rHeader">Experience Professionnelle</h2>
 				<p>
@@ -221,43 +214,39 @@ plusieurs projets.				</text>
 					- Formateur en informatique chez Ecole Etawfik-Sidi Bel Abbes <br>
 					- Administrateur Réseau chez le provider internet ALGERIECOM-ORAN
 				</p>
-				<p>
-					
-				</p>
-				<p>
-					
-
-				</p>
 				<h2 class="major rHeader">Compétences</h2>
 				<i>Environnement Windows</i> <br>
                                <i>ERP System NGBSS, OSS, Réseaux informatique, Applications Web et android, ecommerce,wordpress</i> <br>
-				<p>
-									<p></p>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="#">
+				<form method="post" action="contact.php">
 					<div class="fields">
 						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<label for="name">Nom</label>
+							<input type="text" name="name" id="name" required />
 						</div>
 						<div class="field half">
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="field">
+							<label for="sujet">Sujet</label>
+							<input type="text" name="sujet" id="sujet" />
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
+							<textarea name="message" id="message" rows="4" required></textarea>
 						</div>
 					</div>
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
+						<li><input type="submit" value="Envoyer" class="primary" /></li>
+						<li><input type="reset" value="Effacer" /></li>
 					</ul>
 				</form>
+				<p>Vous pouvez aussi me contacter directement à <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
 			</article>
 
 			<!-- Elements -->
@@ -292,9 +281,6 @@ while (!deck.isInOrder()) {
     deck.shuffle();
     i++;
 }
-
-
-
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</section>
@@ -518,7 +504,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 		<footer id="footer">
 			<p>Me contacter à <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
-
 		</footer>
 
 	</div>
