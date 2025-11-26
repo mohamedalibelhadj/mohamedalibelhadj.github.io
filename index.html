@@ -10,29 +10,72 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Styles pour le sélecteur de langue */
+		.language-switcher {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			display: flex;
+			gap: 10px;
+			z-index: 1000;
+		}
+
+		.lang-option {
+			opacity: 0.7;
+			transition: opacity 0.3s, transform 0.3s;
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
+
+		.lang-option:hover {
+			opacity: 1;
+			transform: scale(1.1);
+		}
+
+		.flag-icon {
+			width: 24px;
+			height: 18px;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+		}
+	</style>
 </head>
 
 <body class="is-preload">
 
 	<!-- JavaScript Code -->
-<script>
-    document.addEventListener("contextmenu", function(e){
-            e.preventDefault();
-        }, false);
-</script>
+	<script>
+		document.addEventListener("contextmenu", function(e){
+			e.preventDefault();
+		}, false);
+	</script>
+
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Header -->
 		<header id="header">
+			<!-- Sélecteur de langue -->
+			<div class="language-switcher">
+				<a href="index.html" class="lang-option" title="Français">
+					<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+				</a>
+				<a href="en/index.html" class="lang-option" title="English">
+					<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+				</a>
+				<a href="es/index.html" class="lang-option" title="Español">
+					<img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-icon">
+				</a>
+			</div>
+
 			<div class="content">
 				<div class="inner">
 					<h1>Mohamed ALI BELHADJ</h1>
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/mohamed-alibelhadj/" target="_blank"
 							class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-						<!-- <li><a href="https://www.instagram.com/" target="_blank"
-							class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 						<li><a href="" target="_blank" class="icon brands fa-github" title="GitHub"><span
 							class="label">GitHub</span></a></li>
 						<li><a href="https://www.youtube.com/channel/" target="_blank" class="icon brands fa-youtube" title="YouTube"><span
@@ -48,7 +91,6 @@
 					<li><a href="#portfolio">Portafolio</a></li>
 					<li><a href="#resumeCV">CV</a></li>
 					<li><a href="#contact">Contacto</a></li>
-					<!-- <li><a href="#elements">Elementos</a></li> -->
 				</ul>
 			</nav>
 		</header>
@@ -74,21 +116,6 @@ varios proyectos.				</text>
 			<article id="portfolio">
 				<h1 class="major">Portafolio</h1>
 				<br>
-				<!-- <h2 class="major rHeader">Proyectos Actuales</h2>
-				<container>
-					<div class="row">
-						<div class="currentColumn">
-							<div class="outline">
-
-							</div>
-						</div>
-						<div class="currentColumn">
-							<div class="outline">
-
-							</div>
-						</div>
-					</div>
-				</container> -->
 				<h2 class="major rHeader">Proyectos Principales</h2>
 				<container>
 					<div class="row">
@@ -99,8 +126,6 @@ varios proyectos.				</text>
 								<p class="portfoliop">
 									Aplicación de venta en línea.
 								</p>
-								<p class="portfoliop">
-								
 							</div>
 						</div>
 						<div class="topColumn">
@@ -110,42 +135,31 @@ varios proyectos.				</text>
 								<p class="portfoliop">
 									Aplicación de venta en línea.
 								</p>
-								<p class="portfoliop">
-								</p>
+							</div>
 						</div>
-                            
-											</div>
-                        <div class="topColumn">
+						<div class="topColumn">
 							<div class="outline">
 								<h3 class="cardTitle">Plataforma de Gestión de Obras Sociales</h3>
 								<img class="cardImg" src="images/social.jpg" alt="">
 								<p class="portfoliop">
 									http://www.cwoste-sba.dz
 								</p>
-								<p class="portfoliop">
-								
-							</div>
-
-                        <div class="row">
-												</div>
-
-				</container>
-				<h2 class="major rHeader">Otros Proyectos</h2>
-				
-					</div>
-				</container>
-				<div class="row">
-						<div class="topColumn">
-							<div class="outline">
-								<h3 class="cardTitle">Sitio del Periódico Ouestinfo</h3>
-								<img class="cardImg" src="images/ouest.jpg" alt="">
-								<p class="portfoliop">
-									Sitio web del periódico Ouestinfo.
-								</p>
-								<p class="portfoliop">
-								
 							</div>
 						</div>
+					</div>
+				</container>
+				<h2 class="major rHeader">Otros Proyectos</h2>
+				<div class="row">
+					<div class="topColumn">
+						<div class="outline">
+							<h3 class="cardTitle">Sitio del Periódico Ouestinfo</h3>
+							<img class="cardImg" src="images/ouest.jpg" alt="">
+							<p class="portfoliop">
+								Sitio web del periódico Ouestinfo.
+							</p>
+						</div>
+					</div>
+				</div>
 			</article>
 
 			<!-- Resume -->
@@ -161,9 +175,9 @@ varios proyectos.				</text>
 				</p>
 				<p>
 					<b>Formación en Marketing y Management en INPED Boumerdes-Argelia</b> <br>
-									</p>
+				</p>
+				<p>
 					<b>Estudios Personales</b> <br>
-					<!-- <i>Estudios Completados</i> <br> -->
 					<ul>
 						<i>Estudios Actuales</i>
 						<li>							
@@ -175,6 +189,7 @@ varios proyectos.				</text>
 							<i>Admitido en 3er Ciclo IPA -Informática Programación y Aplicación-Universidad Léonard Di Vinci París</i>
 						</li>
 					</ul>
+				</p>
 				<h2 class="major rHeader">Experiencia Profesional</h2>
 				<p>
 					<b>25/03/2024 hasta la fecha: Responsable del Plan de Acciones y Reporting</b> <br>
@@ -190,8 +205,6 @@ varios proyectos.				</text>
 				<p>
 					<b>Subdirector Comercial- ALGERIE TELECOM TIARET</b> <br>
 					<i>Mayo 2016- Enero 2017</i> <br>
-					<br>
-					
 				</p>
 				<p>
 					<b>Jefe de Servicio de Cuadro de Mando-ALGERIE TELECOM Sidi Bel Abbes </b> <br>
@@ -208,23 +221,23 @@ varios proyectos.				</text>
 				</p>
 				<p>
 					<b>Director de Agencia Comercial-ALGERIE TELECOM Sidi Bel Abbes</b> <br>
-                                        <i>Junio 2008 a Septiembre 2009 </i>
+                    <i>Junio 2008 a Septiembre 2009 </i>
 					- Venta de accesos a internet y telefónicos por cable e inalámbricos <br>
 					- Asegurar la Calidad de servicio mediante una atención eficaz a los clientes. 
 				</p>
 				<p>
 					<b>Jefe de proyecto DJAWEB-ORAN</b> <br>
 					<i>Enero 2007 - Marzo 2008</i> <br>
-					- Implementación de la Red de acceso xDSL (tecnología ALCATEL)</p>
+					- Implementación de la Red de acceso xDSL (tecnología ALCATEL)
+				</p>
 				<p>
-					
 					<i>1999-2003</i> <br>
 					- Formador en informática en la Escuela Etawfik-Sidi Bel Abbes <br>
 					- Administrador de Red en el proveedor de internet ALGERIECOM-ORAN
 				</p>
 				<h2 class="major rHeader">Competencias</h2>
 				<i>Entorno Windows</i> <br>
-                               <i>Sistema ERP NGBSS, OSS, Redes informáticas, Aplicaciones Web y android, ecommerce, wordpress</i> <br>
+                <i>Sistema ERP NGBSS, OSS, Redes informáticas, Aplicaciones Web y android, ecommerce, wordpress</i> <br>
 			</article>
 
 			<!-- Contact -->
@@ -255,256 +268,6 @@ varios proyectos.				</text>
 					</ul>
 				</form>
 				<p>También puede contactarme directamente a <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
-			</article>
-
-			<!-- Elements -->
-			<article id="elements">
-				<h2 class="major">Elementos</h2>
-
-				<section>
-					<h3 class="major">Texto</h3>
-					<p>Esto es <b>negrita</b> y esto es <strong>fuerte</strong>. Esto es <i>itálica</i> y esto es
-						<em>énfasis</em>.
-						Esto es <sup>superíndice</sup> texto y esto es <sub>subíndice</sub> texto.
-						Esto es <u>subrayado</u> y esto es código: <code>for (;;) { ... }</code>. Finalmente, <a
-							href="#">esto es un enlace</a>.
-					</p>
-					<hr />
-					<h2>Encabezado Nivel 2</h2>
-					<h3>Encabezado Nivel 3</h3>
-					<h4>Encabezado Nivel 4</h4>
-					<h5>Encabezado Nivel 5</h5>
-					<h6>Encabezado Nivel 6</h6>
-					<hr />
-					<h4>Cita</h4>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
-						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
-						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
-						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-					<h4>Preformateado</h4>
-					<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteración ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'Tomó ' + i + ' iteraciones ordenar el deck.';</code></pre>
-				</section>
-
-				<section>
-					<h3 class="major">Listas</h3>
-
-					<h4>No ordenada</h4>
-					<ul>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Sagittis adipiscing.</li>
-						<li>Felis enim feugiat.</li>
-					</ul>
-
-					<h4>Alternativa</h4>
-					<ul class="alt">
-						<li>Dolor pulvinar etiam.</li>
-						<li>Sagittis adipiscing.</li>
-						<li>Felis enim feugiat.</li>
-					</ul>
-
-					<h4>Ordenada</h4>
-					<ol>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Etiam vel felis viverra.</li>
-						<li>Felis enim feugiat.</li>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Etiam vel felis lorem.</li>
-						<li>Felis enim et feugiat.</li>
-					</ol>
-					<h4>Iconos</h4>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
-
-					<h4>Acciones</h4>
-					<ul class="actions">
-						<li><a href="#" class="button primary">Por defecto</a></li>
-						<li><a href="#" class="button">Por defecto</a></li>
-					</ul>
-					<ul class="actions stacked">
-						<li><a href="#" class="button primary">Por defecto</a></li>
-						<li><a href="#" class="button">Por defecto</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h3 class="major">Tabla</h3>
-					<h4>Por defecto</h4>
-					<div class="table-wrapper">
-						<table>
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Descripción</th>
-									<th>Precio</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Artículo Uno</td>
-									<td>Ante turpis integer aliquet porttitor.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Dos</td>
-									<td>Vis ac commodo adipiscing arcu aliquet.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Tres</td>
-									<td> Morbi faucibus arcu accumsan lorem.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Cuatro</td>
-									<td>Vitae integer tempus condimentum.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Cinco</td>
-									<td>Ante turpis integer aliquet porttitor.</td>
-									<td>29.99</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td colspan="2"></td>
-									<td>100.00</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-
-					<h4>Alternativa</h4>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Descripción</th>
-									<th>Precio</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Artículo Uno</td>
-									<td>Ante turpis integer aliquet porttitor.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Dos</td>
-									<td>Vis ac commodo adipiscing arcu aliquet.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Tres</td>
-									<td> Morbi faucibus arcu accumsan lorem.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Cuatro</td>
-									<td>Vitae integer tempus condimentum.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>Artículo Cinco</td>
-									<td>Ante turpis integer aliquet porttitor.</td>
-									<td>29.99</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td colspan="2"></td>
-									<td>100.00</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-				</section>
-
-				<section>
-					<h3 class="major">Botones</h3>
-					<ul class="actions">
-						<li><a href="#" class="button primary">Primario</a></li>
-						<li><a href="#" class="button">Por defecto</a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="#" class="button">Por defecto</a></li>
-						<li><a href="#" class="button small">Pequeño</a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="#" class="button primary icon solid fa-download">Icono</a></li>
-						<li><a href="#" class="button icon solid fa-download">Icono</a></li>
-					</ul>
-					<ul class="actions">
-						<li><span class="button primary disabled">Deshabilitado</span></li>
-						<li><span class="button disabled">Deshabilitado</span></li>
-					</ul>
-				</section>
-
-				<section>
-					<h3 class="major">Formulario</h3>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="demo-name">Nombre</label>
-								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-							</div>
-							<div class="field half">
-								<label for="demo-email">Email</label>
-								<input type="email" name="demo-email" id="demo-email" value=""
-									placeholder="jane@untitled.tld" />
-							</div>
-							<div class="field">
-								<label for="demo-category">Categoría</label>
-								<select name="demo-category" id="demo-category">
-									<option value="">-</option>
-									<option value="1">Manufactura</option>
-									<option value="1">Envíos</option>
-									<option value="1">Administración</option>
-									<option value="1">Recursos Humanos</option>
-								</select>
-							</div>
-							<div class="field half">
-								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-								<label for="demo-priority-low">Baja</label>
-							</div>
-							<div class="field half">
-								<input type="radio" id="demo-priority-high" name="demo-priority">
-								<label for="demo-priority-high">Alta</label>
-							</div>
-							<div class="field half">
-								<input type="checkbox" id="demo-copy" name="demo-copy">
-								<label for="demo-copy">Enviarme una copia</label>
-							</div>
-							<div class="field half">
-								<input type="checkbox" id="demo-human" name="demo-human" checked>
-								<label for="demo-human">No soy un robot</label>
-							</div>
-							<div class="field">
-								<label for="demo-message">Mensaje</label>
-								<textarea name="demo-message" id="demo-message" placeholder="Ingrese su mensaje"
-									rows="6"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Enviar Mensaje" class="primary" /></li>
-							<li><input type="reset" value="Restablecer" /></li>
-						</ul>
-					</form>
-				</section>
-
 			</article>
 
 		</div>
