@@ -13,7 +13,7 @@
 	<style>
 		/* Styles pour le sélecteur de langue */
 		.language-switcher {
-			position: absolute;
+			position: fixed;
 			top: 20px;
 			right: 20px;
 			display: flex;
@@ -27,6 +27,7 @@
 			border: none;
 			background: none;
 			cursor: pointer;
+			text-decoration: none;
 		}
 
 		.lang-option:hover {
@@ -65,7 +66,7 @@
 				<a href="../en/index.html" class="lang-option" title="English">
 					<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
 				</a>
-				<a href="index.html" class="lang-option" title="Español">
+				<a href="https://mohamedalibelhadj.github.io/es/index.html" class="lang-option" title="Español">
 					<img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-icon">
 				</a>
 			</div>
@@ -76,11 +77,11 @@
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/mohamed-alibelhadj/" target="_blank"
 							class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-						<li><a href="" target="_blank" class="icon brands fa-github" title="GitHub"><span
+						<li><a href="https://github.com/mohamedalibelhadj" target="_blank" class="icon brands fa-github" title="GitHub"><span
 							class="label">GitHub</span></a></li>
 						<li><a href="https://www.youtube.com/channel/" target="_blank" class="icon brands fa-youtube" title="YouTube"><span
 							class="label">YouTube</span></a></li>
-						<li><a href="../images/" target="_blank"
+						<li><a href="../cv.pdf" target="_blank"
 							class="icon far fa-file" title="Currículum"><span class="label">Currículum</span></a></li>
 					</ul>
 				</div>
@@ -101,10 +102,10 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h1 class="major">Introducción</h1>
-				<img class="introPic" src="../images/introPic.jpg">
-				<text class="aboutMe">
+				<img class="introPic" src="../images/introPic.jpg" alt="Mohamed ALI BELHADJ">
+				<div class="aboutMe">
 					Desarrollador de software, ingeniero de estado graduado en informática, analiza los datos de los clientes para producir diseños y experiencias de usuario eficaces. Obtuvo un certificado Full-Stack. Conocido por sus cualidades de liderazgo y su iniciativa. Dirigió con éxito una red comercial en la empresa ALGERIETELECOM, reestructurando su diseño basado en datos demográficos atrayendo mientras aumentaba la cartera de clientes según diversas tecnologías de acceso a internet (RTC, Red de cobre, WLL, CDMA, Fibra Óptica). Capacidades comprobadas de trabajo en equipo, naturaleza adaptativa y sólidas habilidades de comunicación interpersonal gracias a varios proyectos.
-				</text>
+				</div>
 			</article>
 
 			<!-- Portfolio -->
@@ -112,45 +113,45 @@
 				<h1 class="major">Portafolio</h1>
 				<br>
 				<h2 class="major rHeader">Proyectos Principales</h2>
-				<container>
+				<div class="container">
 					<div class="row">
 						<div class="topColumn">
 							<div class="outline">
 								<h3 class="cardTitle">Aplicación de Gestión de Consultorio Médico</h3>
-								<img class="cardImg" src="../images/doctor.jpg" alt="">
+								<img class="cardImg" src="../images/doctor.jpg" alt="Gestión de Consultorio Médico">
 								<p class="portfoliop">
-									Aplicación de venta en línea.
+									Sistema completo para gestión de consultorios médicos con agenda, pacientes y historiales médicos.
 								</p>
 							</div>
 						</div>
 						<div class="topColumn">
 							<div class="outline">
 								<h3 class="cardTitle">Aplicación Ecommerce</h3>
-								<img class="cardImg" src="../images/ecomm.gif" alt="">
+								<img class="cardImg" src="../images/ecomm.gif" alt="Aplicación Ecommerce">
 								<p class="portfoliop">
-									Aplicación de venta en línea.
+									Plataforma de comercio electrónico completa con carrito de compras y pasarela de pago.
 								</p>
 							</div>
 						</div>
 						<div class="topColumn">
 							<div class="outline">
 								<h3 class="cardTitle">Plataforma de Gestión de Obras Sociales</h3>
-								<img class="cardImg" src="../images/social.jpg" alt="">
+								<img class="cardImg" src="../images/social.jpg" alt="Gestión de Obras Sociales">
 								<p class="portfoliop">
-									http://www.cwoste-sba.dz
+									<a href="http://www.cwoste-sba.dz" target="_blank">http://www.cwoste-sba.dz</a>
 								</p>
 							</div>
 						</div>
 					</div>
-				</container>
+				</div>
 				<h2 class="major rHeader">Otros Proyectos</h2>
 				<div class="row">
 					<div class="topColumn">
 						<div class="outline">
 							<h3 class="cardTitle">Sitio del Periódico Ouestinfo</h3>
-							<img class="cardImg" src="../images/ouest.jpg" alt="">
+							<img class="cardImg" src="../images/ouest.jpg" alt="Periódico Ouestinfo">
 							<p class="portfoliop">
-								Sitio web del periódico Ouestinfo.
+								Portal web moderno para el periódico Ouestinfo con sistema de gestión de contenidos.
 							</p>
 						</div>
 					</div>
@@ -163,82 +164,81 @@
 				
 				<h2 class="major rHeader">Educación</h2>
 				<p>
-					<b>Universidad de Djillali Libès-Instituto de Informática de Sidi Bel Abbes-Argelia</b> <br>
-					<i>Diploma obtenido en Octubre 1998</i> <br>
-					Herramientas y Tecnologías: HTML, CSS, JavaScript, jQuery, AJAX, Node.js, PHP, MySQL, Handlebars, MongoDB, y
-					más
+					<strong>Universidad de Djillali Libès-Instituto de Informática de Sidi Bel Abbes-Argelia</strong> <br>
+					<em>Diploma obtenido en Octubre 1998</em> <br>
+					Herramientas y Tecnologías: HTML, CSS, JavaScript, jQuery, AJAX, Node.js, PHP, MySQL, Handlebars, MongoDB, y más
 				</p>
 				<p>
-					<b>Formación en Marketing y Management en INPED Boumerdes-Argelia</b> <br>
+					<strong>Formación en Marketing y Management en INPED Boumerdes-Argelia</strong> <br>
 				</p>
 				<p>
-					<b>Estudios Personales</b> <br>
+					<strong>Estudios Personales</strong> <br>
 					<ul>
-						<i>Estudios Actuales</i>
+						<em>Estudios Actuales</em>
 						<li>							
-							<a href="https://www.amazon.com/dp/1680507222?psc=1&ref=ppx_yo2_dt_b_product_details" target="_blank">Common-Sense Guide to Data Structures and Algorithms (2nd Ed.) <i>por Jan Wengrow</i>
+							<a href="https://www.amazon.com/dp/1680507222?psc=1&ref=ppx_yo2_dt_b_product_details" target="_blank">Common-Sense Guide to Data Structures and Algorithms (2nd Ed.) <em>por Jan Wengrow</em>
 							</a>
 						</li>
 						<li>
 							Desarrollador Web Full-Stack con certificado en Especialidad React<br>
-							<i>Admitido en 3er Ciclo IPA -Informática Programación y Aplicación-Universidad Léonard Di Vinci París</i>
+							<em>Admitido en 3er Ciclo IPA -Informática Programación y Aplicación-Universidad Léonard Di Vinci París</em>
 						</li>
 					</ul>
 				</p>
 				<h2 class="major rHeader">Experiencia Profesional</h2>
 				<p>
-					<b>25/03/2024 hasta la fecha: Responsable del Plan de Acciones y Reporting</b> <br>
-					<i>Noviembre 2023 hasta la fecha</i> <br>
-                       Seguimiento de proyectos Técnico-Comerciales y Medios de la empresa en Sidi Bel Abbes (Red de Fibra Óptica, venta de accesos a internet, facturación, cobro de deudas, etc.)
+					<strong>25/03/2024 hasta la fecha: Responsable del Plan de Acciones y Reporting</strong> <br>
+					<em>Noviembre 2023 hasta la fecha</em> <br>
+					Seguimiento de proyectos Técnico-Comerciales y Medios de la empresa en Sidi Bel Abbes (Red de Fibra Óptica, venta de accesos a internet, facturación, cobro de deudas, etc.)
                 </p>
 
                 <p>
-					<b>Jefe de Departamento de Ventas-ALGERIE TELECOM</b> <br>
-					<i>2017 - Noviembre 2023</i> <br>
+					<strong>Jefe de Departamento de Ventas-ALGERIE TELECOM</strong> <br>
+					<em>2017 - Noviembre 2023</em> <br>
 					Gestión de la Red comercial (telefonía, acceso a Internet, redes, etc.)
 				</p>
 				<p>
-					<b>Subdirector Comercial- ALGERIE TELECOM TIARET</b> <br>
-					<i>Mayo 2016- Enero 2017</i> <br>
+					<strong>Subdirector Comercial- ALGERIE TELECOM TIARET</strong> <br>
+					<em>Mayo 2016- Enero 2017</em> <br>
 				</p>
 				<p>
-					<b>Jefe de Servicio de Cuadro de Mando-ALGERIE TELECOM Sidi Bel Abbes </b> <br>
-					<i>Septiembre 2010 - Enero 2015</i> <br>
+					<strong>Jefe de Servicio de Cuadro de Mando-ALGERIE TELECOM Sidi Bel Abbes</strong> <br>
+					<em>Septiembre 2010 - Enero 2015</em> <br>
 					- Análisis de datos <br>
 					- Seguimiento de realizaciones Técnico-comerciales
 				</p>
 				<p>
-					<b>Director operativo interino-ALGERIE TELECOM Sidi Bel Abbes</b> <br>
-					<i>Mayo 2016 - Septiembre 2016</i> <br>
+					<strong>Director operativo interino-ALGERIE TELECOM Sidi Bel Abbes</strong> <br>
+					<em>Mayo 2016 - Septiembre 2016</em> <br>
 					- Dirección de una unidad de Telecomunicaciones<br>
 					- Implementación del plan de acción y realización de objetivos técnico-comerciales (Extensión de redes)<br>
 					- Gestión de equipos de producción.
 				</p>
 				<p>
-					<b>Director de Agencia Comercial-ALGERIE TELECOM Sidi Bel Abbes</b> <br>
-                    <i>Junio 2008 a Septiembre 2009 </i>
+					<strong>Director de Agencia Comercial-ALGERIE TELECOM Sidi Bel Abbes</strong> <br>
+                    <em>Junio 2008 a Septiembre 2009</em>
 					- Venta de accesos a internet y telefónicos por cable e inalámbricos <br>
 					- Asegurar la Calidad de servicio mediante una atención eficaz a los clientes. 
 				</p>
 				<p>
-					<b>Jefe de proyecto DJAWEB-ORAN</b> <br>
-					<i>Enero 2007 - Marzo 2008</i> <br>
+					<strong>Jefe de proyecto DJAWEB-ORAN</strong> <br>
+					<em>Enero 2007 - Marzo 2008</em> <br>
 					- Implementación de la Red de acceso xDSL (tecnología ALCATEL)
 				</p>
 				<p>
-					<i>1999-2003</i> <br>
+					<em>1999-2003</em> <br>
 					- Formador en informática en la Escuela Etawfik-Sidi Bel Abbes <br>
 					- Administrador de Red en el proveedor de internet ALGERIECOM-ORAN
 				</p>
 				<h2 class="major rHeader">Competencias</h2>
-				<i>Entorno Windows</i> <br>
-                <i>Sistema ERP NGBSS, OSS, Redes informáticas, Aplicaciones Web y android, ecommerce, wordpress</i> <br>
+				<em>Entorno Windows</em> <br>
+                <em>Sistema ERP NGBSS, OSS, Redes informáticas, Aplicaciones Web y android, ecommerce, wordpress</em> <br>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contacto</h2>
-				<form method="post" action="../contact.php">
+				<form action="https://formspree.io/f/your-form-id" method="POST">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Nombre</label>
