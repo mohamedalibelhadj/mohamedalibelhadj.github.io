@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-	<title>Mohamed ALI BELHADJ - Desarrollador Web</title>
+	<title>ALI BELHADJ Mohamed - Desarrollador Web</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
@@ -17,7 +17,7 @@
 			top: 20px;
 			right: 20px;
 			display: flex;
-			gap: 10px;
+			gap: 12px;
 			z-index: 1000;
 		}
 
@@ -32,14 +32,20 @@
 
 		.lang-option:hover {
 			opacity: 1;
-			transform: scale(1.1);
+			transform: scale(1.15);
 		}
 
 		.flag-icon {
-			width: 24px;
-			height: 18px;
-			border-radius: 2px;
-			box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+			width: 32px;
+			height: 24px;
+			border-radius: 3px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+			transition: transform 0.2s ease;
+		}
+
+		/* Effet supplémentaire au survol */
+		.lang-option:hover .flag-icon {
+			transform: scale(1.1);
 		}
 	</style>
 </head>
@@ -66,7 +72,7 @@
 				<a href="../en/index.html" class="lang-option" title="English">
 					<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
 				</a>
-				<a href="https://mohamedalibelhadj.github.io/es/index.html" class="lang-option" title="Español">
+				<a href="index.html" class="lang-option" title="Español">
 					<img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-icon">
 				</a>
 			</div>
@@ -120,7 +126,7 @@
 								<h3 class="cardTitle">Aplicación de Gestión de Consultorio Médico</h3>
 								<img class="cardImg" src="../images/doctor.jpg" alt="Gestión de Consultorio Médico">
 								<p class="portfoliop">
-									Sistema completo para gestión de consultorios médicos con agenda, pacientes y historiales médicos.
+									Sistema completo para gestión de consultorios médicos con agenda, pacientes e historiales médicos.
 								</p>
 							</div>
 						</div>
