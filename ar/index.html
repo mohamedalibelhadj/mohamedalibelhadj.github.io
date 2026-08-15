@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+
+<head>
+	<title>محمد علي بلحاج - مطور ويب</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/secondary.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+	<style>
+		/* Styles pour le sélecteur de langue */
+		.language-switcher {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			display: flex;
+			gap: 12px;
+			z-index: 1000;
+		}
+
+		.lang-option {
+			opacity: 0.7;
+			transition: opacity 0.3s, transform 0.3s;
+			border: none;
+			background: none;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		.lang-option:hover {
+			opacity: 1;
+			transform: scale(1.15);
+		}
+
+		.flag-icon {
+			width: 32px;
+			height: 24px;
+			border-radius: 3px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+			transition: transform 0.2s ease;
+		}
+
+		.lang-option:hover .flag-icon {
+			transform: scale(1.1);
+		}
+
+		/* Ajustements pour le RTL */
+		.icons {
+			direction: ltr;
+		}
+		
+		.aboutMe {
+			text-align: justify;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- JavaScript Code -->
+	<script>
+		document.addEventListener("contextmenu", function(e){
+			e.preventDefault();
+		}, false);
+	</script>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<!-- Sélecteur de langue -->
+			<div class="language-switcher">
+				<!-- Arabe -->
+				<a href="index.html" class="lang-option" title="العربية">
+					<img src="https://flagcdn.com/w40/dz.png" alt="العربية" class="flag-icon">
+				</a>
+				<!-- Anglais -->
+				<a href="../en/index.html" class="lang-option" title="English">
+					<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+				</a>
+				<!-- Français -->
+				<a href="../index.html" class="lang-option" title="Français">
+					<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+				</a>
+				<!-- Espagnol -->
+				<a href="../es/index.html" class="lang-option" title="Español">
+					<img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-icon">
+				</a>
+			</div>
+
+			<div class="content">
+				<div class="inner">
+					<h1>محمد علي بلحاج</h1>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mohamed-alibelhadj/" target="_blank"
+							class="icon brands fa-linkedin" title="لينكدإن"><span class="label">لينكدإن</span></a></li>
+						<li><a href="https://github.com/mohamedalibelhadj" target="_blank" class="icon brands fa-github" title="جيت هاب"><span
+							class="label">جيت هاب</span></a></li>
+						<li><a href="https://www.youtube.com/channel/" target="_blank" class="icon brands fa-youtube" title="يوتيوب"><span
+							class="label">يوتيوب</span></a></li>
+						<li><a href="../cv.pdf" target="_blank"
+							class="icon far fa-file" title="السيرة الذاتية"><span class="label">السيرة الذاتية</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">مقدمة</a></li>
+					<li><a href="#portfolio">أعمالي</a></li>
+					<li><a href="#resumeCV">السيرة الذاتية</a></li>
+					<li><a href="#contact">اتصل بي</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h1 class="major">مقدمة</h1>
+				<img class="introPic" src="../images/introPic.jpg" alt="محمد علي بلحاج">
+				<div class="aboutMe">
+					مطور برمجيات ومهندس كمبيوتر معتمد، يقوم بتحليل بيانات العملاء لتصميم واجهات وتجارب مستخدم مثالية. حاصل على شهادة Full-Stack. معروف بقيادته وروح المبادرة، قام بنجاح بإدارة شبكة مبيعات في اتصالات الجزائر، وأعاد هيكلة تنظيمها بناءً على بيانات ديموغرافية لجذب وتطوير قاعدة العملاء على تقنيات الوصول إلى الإنترنت المختلفة (RTC، شبكة النحاس، WLL، CDMA، الألياف البصرية). أثبت كفاءته في العمل الجماعي، والقدرة على التكيف، والتواصل الشخصي، وهي صفات اكتسبها من خلال العديد من المشاريع.
+				</div>
+			</article>
+
+			<!-- Portfolio -->
+			<article id="portfolio">
+				<h1 class="major">أعمالي</h1>
+				<br>
+				<h2 class="major rHeader">المشاريع الرئيسية</h2>
+				<div class="container">
+					<div class="row">
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">تطبيق إدارة العيادات الطبية</h3>
+								<img class="cardImg" src="../images/doctor.jpg" alt="إدارة العيادات الطبية">
+								<p class="portfoliop">
+									نظام متكامل لإدارة العيادات الطبية.
+								</p>
+							</div>
+						</div>
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">تطبيق التجارة الإلكترونية</h3>
+								<img class="cardImg" src="../images/ecomm.gif" alt="تطبيق التجارة الإلكترونية">
+								<p class="portfoliop">
+									منصة تجارة إلكترونية متكاملة.
+								</p>
+							</div>
+						</div>
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">منصة إدارة الأعمال الاجتماعية</h3>
+								<img class="cardImg" src="../images/social.jpg" alt="إدارة الأعمال الاجتماعية">
+								<p class="portfoliop">
+									<a href="http://www.cwoste-sba.dz" target="_blank">http://www.cwoste-sba.dz</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="major rHeader">مشاريع أخرى</h2>
+				<div class="row">
+					<div class="topColumn">
+						<div class="outline">
+							<h3 class="cardTitle">موقع جريدة وست انفو</h3>
+							<img class="cardImg" src="../images/ouest.jpg" alt="جريدة وست انفو">
+							<p class="portfoliop">
+								بوابة ويب لجريدة وست انفو.
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- Resume -->
+			<article id="resumeCV">
+				<h1 class="major">السيرة الذاتية</h1>
+				
+				<h2 class="major rHeader">التعليم</h2>
+				<p>
+					<strong>جامعة جيلالي ليابس - معهد الإعلام الآلي سيدي بلعباس - الجزائر</strong> <br>
+					<em>حصل على الشهادة في أكتوبر 1998</em> <br>
+					الأدوات والتقنيات: HTML، CSS، JavaScript، jQuery، AJAX، Node.js، PHP، MySQL، Handlebars، MongoDB، والمزيد
+				</p>
+				<p>
+					<strong>تكوين في التسويق والتسيير بمعهد INPED بومرداس - الجزائر</strong> <br>
+				</p>
+				<p>
+					<strong>الدراسات الشخصية</strong> <br>
+					<ul>
+						<em>دراسات جارية</em>
+						<li>							
+							<a href="https://www.amazon.com/dp/1680507222?psc=1&ref=ppx_yo2_dt_b_product_details" target="_blank">Common-Sense Guide to Data Structures and Algorithms (2nd Ed.) <em>بقلم جان وينغرو</em>
+							</a>
+						</li>
+						<li>
+							مطور ويب Full-Stack مع شهادة في تخصص React<br>
+							<em>مقبول في الدورة الثالثة IPA - برمجة وتطبيقات المعلوماتية - جامعة ليوناردو دا فينشي باريس</em>
+						</li>
+					</ul>
+				</p>
+				<h2 class="major rHeader">الخبرة المهنية</h2>
+				<p>
+					<strong>25/03/2024 إلى الآن : مسؤول خطة العمل والتقارير</strong> <br>
+					<em>نوفمبر 2023 إلى الآن</em> <br>
+					متابعة المشاريع التقنية التجارية والإعلامية للشركة بسيدي بلعباس (شبكة الألياف البصرية، بيع خدمة الإنترنت، الفوترة، تحصيل الديون، إلخ.)
+                </p>
+
+                <p>
+					<strong>رئيس قسم المبيعات - اتصالات الجزائر</strong> <br>
+					<em>2017 - نوفمبر 2023</em> <br>
+					إدارة الشبكة التجارية (الهاتف، خدمة الإنترنت، الشبكات، إلخ.)
+				</p>
+				<p>
+					<strong>نائب المدير التجاري - اتصالات الجزائر تيارت</strong> <br>
+					<em>ماي 2016 - جانفي 2017</em> <br>
+				</p>
+				<p>
+					<strong>رئيس خدمة لوحة القيادة - اتصالات الجزائر سيدي بلعباس</strong> <br>
+					<em>سبتمبر 2010 - جانفي 2015</em> <br>
+					- تحليل البيانات <br>
+					- متابعة الإنجازات التقنية التجارية
+				</p>
+				<p>
+					<strong>المدير التنفيذي بالنيابة - اتصالات الجزائر سيدي بلعباس</strong> <br>
+					<em>ماي 2016 - سبتمبر 2016</em> <br>
+					- إدارة وحدة اتصالات<br>
+					- تنفيذ خطة العمل وتحقيق الأهداف التقنية التجارية (توسيع الشبكات)<br>
+					- إدارة فرق الإنتاج.
+				</p>
+				<p>
+					<strong>مدير الوكالة التجارية - اتصالات الجزائر سيدي بلعباس</strong> <br>
+                    <em>جوان 2008 إلى سبتمبر 2009</em>
+					- بيع خدمة الإنترنت والهاتف عبر الكابل واللاسلكي <br>
+					- ضمان جودة الخدمة من خلال الاهتمام الفعال بالعملاء. 
+				</p>
+				<p>
+					<strong>رئيس مشروع DJAWEB - وهران</strong> <br>
+					<em>جانفي 2007 - مارس 2008</em> <br>
+					- تنفيذ شبكة الوصول xDSL (تقنية ألكاتيل)
+				</p>
+				<p>
+					<em>1999-2003</em> <br>
+					- مدرب في الإعلام الآلي بمدرسة التوفيق - سيدي بلعباس <br>
+					- مسؤول شبكة لدى مزود الإنترنت الجزائرية كوم - وهران
+				</p>
+				<h2 class="major rHeader">المهارات</h2>
+				<em>بيئة ويندوز</em> <br>
+                <em>نظام ERP NGBSS، OSS، شبكات الحاسوب، تطبيقات الويب والأندرويد، التجارة الإلكترونية، ووردبريس</em> <br>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">اتصل بي</h2>
+				<form action="https://formspree.io/f/your-form-id" method="POST">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">الاسم</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="field half">
+							<label for="email">البريد الإلكتروني</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="field">
+							<label for="sujet">الموضوع</label>
+							<input type="text" name="sujet" id="sujet" />
+						</div>
+						<div class="field">
+							<label for="message">الرسالة</label>
+							<textarea name="message" id="message" rows="4" required></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="إرسال" class="primary" /></li>
+						<li><input type="reset" value="مسح" /></li>
+					</ul>
+				</form>
+				<p>يمكنك أيضًا الاتصال بي مباشرة على <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p>اتصل بي على <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
