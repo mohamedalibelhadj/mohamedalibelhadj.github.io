@@ -2,15 +2,18 @@
    PORTFOLIO AMÉLIORÉ - Styles supplémentaires
    ============================================================ */
 
-/* Grille du portfolio */
+/* ===== Grille du portfolio ===== */
 .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-bottom: 2rem;
 }
 
-/* Carte projet */
+/* ===== Carte projet ===== */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    background: var(--bg-card, rgba(255, 255, 255, 0.05));
+    border-radius: var(--radius, 12px);
     overflow: hidden;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                 box-shadow 0.3s ease,
@@ -26,14 +29,14 @@
 .project-card:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: rgba(24, 191, 239, 0.3);
+    border-color: rgba(108, 60, 225, 0.4);
 }
 
-/* Conteneur de l'image */
+/* ===== Conteneur de l'image ===== */
 .card-image {
     position: relative;
     overflow: hidden;
-    background: #1e252d;
+    background: #1a1a2e;
     min-height: 180px;
 }
 
@@ -49,7 +52,7 @@
     transform: scale(1.08);
 }
 
-/* Overlay des badges technologiques */
+/* ===== Overlay des badges technologiques ===== */
 .card-overlay {
     position: absolute;
     bottom: 0;
@@ -63,14 +66,16 @@
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.4s ease;
+    pointer-events: none;
 }
 
 .project-card:hover .card-overlay {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
-/* Badge technologique */
+/* ===== Badge technologique ===== */
 .tech-badge {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(4px);
@@ -84,29 +89,30 @@
     letter-spacing: 0.5px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     transition: all 0.3s ease;
+    cursor: default;
 }
 
 .tech-badge:hover {
-    background: #18bfef;
-    border-color: #18bfef;
+    background: #6C3CE1;
+    border-color: #6C3CE1;
     transform: scale(1.05);
 }
 
-/* Badge de statut du projet */
+/* ===== Badge de statut du projet ===== */
 .project-status {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: #18bfef;
+    background: #6C3CE1;
     color: #fff;
-    padding: 3px 12px;
+    padding: 4px 14px;
     border-radius: 20px;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     z-index: 2;
-    box-shadow: 0 2px 10px rgba(24, 191, 239, 0.4);
+    box-shadow: 0 2px 10px rgba(108, 60, 225, 0.4);
 }
 
 .project-status.soon {
@@ -119,7 +125,7 @@
     box-shadow: 0 2px 10px rgba(46, 204, 113, 0.4);
 }
 
-/* Contenu de la carte */
+/* ===== Contenu de la carte ===== */
 .card-content {
     padding: 1.5rem;
     flex: 1;
@@ -132,7 +138,8 @@
     margin-bottom: 0.6rem;
     font-size: 1.2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #ffffff 0%, #18bfef 100%);
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #6C3CE1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -142,27 +149,25 @@
     flex: 1;
     margin-bottom: 1.2rem;
     font-size: 0.9rem;
-    opacity: 0.85;
+    color: #8892A0;
     line-height: 1.6;
 }
 
 .card-content .portfoliop a {
-    color: #18bfef;
+    color: #6C3CE1;
     text-decoration: none;
     transition: color 0.3s ease;
-    -webkit-text-fill-color: #18bfef;
 }
 
 .card-content .portfoliop a:hover {
     color: #ffffff;
     text-decoration: underline;
-    -webkit-text-fill-color: #ffffff;
 }
 
-/* Bouton projet */
+/* ===== Bouton projet ===== */
 .btn-project {
     align-self: flex-start;
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.8rem;
     font-size: 0.8rem;
     font-weight: 600;
     background: transparent;
@@ -173,17 +178,18 @@
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn-project:hover {
-    background: #18bfef;
+    background: #6C3CE1;
     color: #fff;
-    border-color: #18bfef;
+    border-color: #6C3CE1;
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(24, 191, 239, 0.3);
+    box-shadow: 0 4px 15px rgba(108, 60, 225, 0.3);
 }
 
-/* Animation d'entrée des cartes */
+/* ===== Animation d'entrée des cartes ===== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -211,56 +217,83 @@
    RESPONSIVE
    ============================================================ */
 
-/* Tablettes */
-@media screen and (max-width: 980px) {
+/* ===== Tablettes ===== */
+@media screen and (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
     .card-image .cardImg {
         height: 200px;
     }
+    
     .card-content {
         padding: 1.25rem;
     }
 }
 
-/* Mobiles */
-@media screen and (max-width: 736px) {
-    .card-image .cardImg {
-        height: 180px;
+/* ===== Mobiles ===== */
+@media screen and (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
+    
+    .card-image .cardImg {
+        height: 200px;
+    }
+    
     .card-content {
         padding: 1rem;
     }
+    
     .card-content .cardTitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
+    
     .topColumn {
         animation: none;
         opacity: 1;
     }
+    
     .project-card:hover {
-        transform: translateY(-4px);
+        transform: translateY(-4px) scale(1);
     }
+    
     .project-card:hover .card-overlay {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Petits mobiles */
-@media screen and (max-width: 480px) {
+/* ===== Très petits mobiles ===== */
+@media screen and (max-width: 400px) {
     .card-image .cardImg {
-        height: 150px;
+        height: 160px;
     }
+    
     .tech-badge {
         font-size: 0.55rem;
         padding: 3px 10px;
     }
+    
     .card-content .portfoliop {
         font-size: 0.8rem;
     }
+    
     .btn-project {
         font-size: 0.7rem;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 1.2rem;
     }
+    
     .project-status {
         font-size: 0.5rem;
         padding: 2px 10px;
