@@ -1,301 +1,290 @@
-/* ============================================================
-   PORTFOLIO AMÉLIORÉ - Styles supplémentaires
-   ============================================================ */
+<!DOCTYPE HTML>
+<html lang="fr">
 
-/* ===== Grille du portfolio ===== */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 2rem;
-}
+<head>
+	<title>Mohamed ALI BELHADJ - Développeur Web</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/secondary.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+	<style>
+		/* Styles pour le sélecteur de langue */
+		.language-switcher {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			display: flex;
+			gap: 10px;
+			z-index: 1000;
+		}
 
-/* ===== Carte projet ===== */
-.project-card {
-    background: var(--bg-card, rgba(255, 255, 255, 0.05));
-    border-radius: var(--radius, 12px);
-    overflow: hidden;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
+		.lang-option {
+			opacity: 0.7;
+			transition: opacity 0.3s, transform 0.3s;
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
 
-.project-card:hover {
-    transform: translateY(-8px) scale(1.01);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: rgba(108, 60, 225, 0.4);
-}
+		.lang-option:hover {
+			opacity: 1;
+			transform: scale(1.1);
+		}
 
-/* ===== Conteneur de l'image ===== */
-.card-image {
-    position: relative;
-    overflow: hidden;
-    background: #1a1a2e;
-    min-height: 180px;
-}
+		.flag-icon {
+			width: 24px;
+			height: 18px;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
 
-.card-image .cardImg {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-}
+<body class="is-preload">
 
-.project-card:hover .card-image .cardImg {
-    transform: scale(1.08);
-}
+	<!-- Code JavaScript -->
+	<script>
+		document.addEventListener("contextmenu", function(e){
+			e.preventDefault();
+		}, false);
+	</script>
 
-/* ===== Overlay des badges technologiques ===== */
-.card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 15px 12px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85) 60%);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
-    pointer-events: none;
-}
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-.project-card:hover .card-overlay {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+		<!-- En-tête -->
+		<header id="header">
+			<!-- Sélecteur de langue -->
+			<div class="language-switcher">
+				<a href="../index.html" class="lang-option" title="Français">
+					<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+				</a>
+				<a href="index.html" class="lang-option" title="English">
+					<img src="https://flagcdn.com/w40/gb.png" alt="Anglais" class="flag-icon">
+				</a>
+				<a href="../es/index.html" class="lang-option" title="Español">
+					<img src="https://flagcdn.com/w40/es.png" alt="Espagnol" class="flag-icon">
+				</a>
+			</div>
 
-/* ===== Badge technologique ===== */
-.tech-badge {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    color: #fff;
-    padding: 4px 14px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    transition: all 0.3s ease;
-    cursor: default;
-}
+			<div class="content">
+				<div class="inner">
+					<h1>Mohamed ALI BELHADJ</h1>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mohamed-alibelhadj/" target="_blank"
+							class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+						<li><a href="" target="_blank" class="icon brands fa-github" title="GitHub"><span
+							class="label">GitHub</span></a></li>
+						<li><a href="https://www.youtube.com/channel/" target="_blank" class="icon brands fa-youtube" title="YouTube"><span
+							class="label">YouTube</span></a></li>
+						<li><a href="../images/" target="_blank"
+							class="icon far fa-file" title="CV"><span class="label">CV</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#resumeCV">CV</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-.tech-badge:hover {
-    background: #6C3CE1;
-    border-color: #6C3CE1;
-    transform: scale(1.05);
-}
+		<!-- Contenu principal -->
+		<div id="main">
 
-/* ===== Badge de statut du projet ===== */
-.project-status {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: #6C3CE1;
-    color: #fff;
-    padding: 4px 14px;
-    border-radius: 20px;
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    z-index: 2;
-    box-shadow: 0 2px 10px rgba(108, 60, 225, 0.4);
-}
+			<!-- Introduction -->
+			<article id="intro">
+				<h1 class="major">Introduction</h1>
+				<img class="introPic" src="../images/introPic.jpg" alt="Photo de Mohamed ALI BELHADJ">
+				<text class="aboutMe">
+					Développeur logiciel, ingénieur d'état en informatique, analyse les données clients pour produire des designs et des expériences utilisateur efficaces. Titulaire d'un certificat Full-Stack.
+					Reconnu pour ses qualités de leadership et son esprit d'initiative. A géré avec succès un réseau commercial chez ALGERIETELECOM, en restructurant sa conception sur la base de données démographiques tout en augmentant le portefeuille clients selon les différentes technologies d'accès Internet (RTC, Réseau Cuivre, WLL, CDMA, Fibre Optique).
+					Capacités de travail en équipe démontrées, nature adaptable et compétences en communication interpersonnelle fortes à travers divers projets.
+				</text>
+			</article>
 
-.project-status.soon {
-    background: #f39c12;
-    box-shadow: 0 2px 10px rgba(243, 156, 18, 0.4);
-}
+			<!-- Portfolio -->
+			<article id="portfolio">
+				<h1 class="major">Portfolio</h1>
+				<br>
+				<h2 class="major rHeader">Projets Principaux</h2>
+				<container>
+					<div class="row">
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">Application de Gestion de Cabinet Médical</h3>
+								<img class="cardImg" src="../images/doctor.jpg" alt="Image d'un cabinet médical">
+								<p class="portfoliop">
+									Application de vente en ligne.
+								</p>
+							</div>
+						</div>
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">Application E-commerce</h3>
+								<img class="cardImg" src="../images/ecomm.gif" alt="Animation e-commerce">
+								<p class="portfoliop">
+									Application de vente en ligne.
+								</p>
+							</div>
+						</div>
+						<div class="topColumn">
+							<div class="outline">
+								<h3 class="cardTitle">Plateforme de Gestion des Œuvres Sociales</h3>
+								<img class="cardImg" src="../images/social.jpg" alt="Image d'œuvres sociales">
+								<p class="portfoliop">
+									http://www.cwoste-sba.dz
+								</p>
+							</div>
+						</div>
+					</div>
+				</container>
+				<h2 class="major rHeader">Autres Projets</h2>
+				<div class="row">
+					<div class="topColumn">
+						<div class="outline">
+							<h3 class="cardTitle">Site Web du Journal Ouestinfo</h3>
+							<img class="cardImg" src="../images/ouest.jpg" alt="Image du journal Ouestinfo">
+							<p class="portfoliop">
+								Site web du journal Ouestinfo.
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
 
-.project-status.live {
-    background: #2ecc71;
-    box-shadow: 0 2px 10px rgba(46, 204, 113, 0.4);
-}
+			<!-- CV -->
+			<article id="resumeCV">
+				<h1 class="major">Curriculum Vitae</h1>
+				
+				<h2 class="major rHeader">Formation</h2>
+				<p>
+					<b>Université Djillali Libès - Institut d'Informatique de Sidi Bel Abbès - Algérie</b> <br>
+					<i>Diplôme obtenu en Octobre 1998</i> <br>
+					Outils et Technologies : HTML, CSS, JavaScript, jQuery, AJAX, Node.js, PHP, MySQL, Handlebars, MongoDB, etc.
+				</p>
+				<p>
+					<b>Formation en Marketing et Management à l'INPED Boumerdès - Algérie</b> <br>
+				</p>
+				<p>
+					<b>Études Personnelles</b> <br>
+					<ul>
+						<i>Études en cours</i>
+						<li>							
+							<a href="https://www.amazon.com/dp/1680507222?psc=1&ref=ppx_yo2_dt_b_product_details" target="_blank">Common-Sense Guide to Data Structures and Algorithms (2e Éd.) <i>par Jan Wengrow</i>
+							</a>
+						</li>
+						<li>
+							Certificat de Développeur Web Full-Stack avec Spécialisation React<br>
+							<i>Admis au 3e Cycle IPA - Programmation Informatique et Applications - Université Léonard de Vinci Paris</i>
+						</li>
+					</ul>
+				</p>
+				<h2 class="major rHeader">Expérience Professionnelle</h2>
+				<p>
+					<b>Depuis le 25/03/2024 : Responsable du Plan d'Action et du Reporting</b> <br>
+					<i>Novembre 2023 à aujourd'hui</i> <br>
+					Suivi des projets Technico-Commerciaux et Médias de l'entreprise à Sidi Bel Abbès (Réseau Fibre Optique, vente d'accès Internet, facturation, recouvrement de créances, etc.)
+                </p>
 
-/* ===== Contenu de la carte ===== */
-.card-content {
-    padding: 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+                <p>
+					<b>Chef du Département Commercial - ALGERIE TELECOM</b> <br>
+					<i>2017 - Novembre 2023</i> <br>
+					Gestion du réseau commercial (téléphonie, accès Internet, réseaux, etc.)
+				</p>
+				<p>
+					<b>Directeur Commercial Adjoint - ALGERIE TELECOM TIARET</b> <br>
+					<i>Mai 2016 - Janvier 2017</i> <br>
+				</p>
+				<p>
+					<b>Responsable du Service Tableau de Bord - ALGERIE TELECOM Sidi Bel Abbès</b> <br>
+					<i>Septembre 2010 - Janvier 2015</i> <br>
+					- Analyse de données <br>
+					- Suivi des réalisations technico-commerciales
+				</p>
+				<p>
+					<b>Directeur Opérationnel par Intérim - ALGERIE TELECOM Sidi Bel Abbès</b> <br>
+					<i>Mai 2016 - Septembre 2016</i> <br>
+					- Gestion d'une unité de télécommunications<br>
+					- Mise en œuvre du plan d'action et réalisation des objectifs technico-commerciaux (Extension du réseau)<br>
+					- Gestion de l'équipe de production
+				</p>
+				<p>
+					<b>Directeur d'Agence Commerciale - ALGERIE TELECOM Sidi Bel Abbès</b> <br>
+                    <i>Juin 2008 à Septembre 2009</i>
+					- Vente d'accès Internet et téléphonique filaire et sans fil <br>
+					- Assurer la qualité de service grâce à un service client efficace
+				</p>
+				<p>
+					<b>Chef de Projet DJAWEB-ORAN</b> <br>
+					<i>Janvier 2007 - Mars 2008</i> <br>
+					- Mise en œuvre du réseau d'accès xDSL (technologie ALCATEL)
+				</p>
+				<p>
+					<i>1999-2003</i> <br>
+					- Formateur en informatique à l'École Etawfik - Sidi Bel Abbès <br>
+					- Administrateur réseau chez le fournisseur d'accès Internet ALGERIECOM-ORAN
+				</p>
+				<h2 class="major rHeader">Compétences</h2>
+				<i>Environnement Windows</i> <br>
+                <i>Système ERP NGBSS, OSS, Réseaux informatiques, Applications Web et Android, E-commerce, WordPress</i> <br>
+			</article>
 
-.card-content .cardTitle {
-    margin-top: 0;
-    margin-bottom: 0.6rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #ffffff;
-    background: linear-gradient(135deg, #ffffff 0%, #6C3CE1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="../contact.php">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Nom</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="field">
+							<label for="sujet">Sujet</label>
+							<input type="text" name="sujet" id="sujet" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4" required></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Envoyer" class="primary" /></li>
+						<li><input type="reset" value="Effacer" /></li>
+					</ul>
+				</form>
+				<p>Vous pouvez également me contacter directement à <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
+			</article>
 
-.card-content .portfoliop {
-    flex: 1;
-    margin-bottom: 1.2rem;
-    font-size: 0.9rem;
-    color: #8892A0;
-    line-height: 1.6;
-}
+		</div>
 
-.card-content .portfoliop a {
-    color: #6C3CE1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+		<!-- Pied de page -->
+		<footer id="footer">
+			<p>Contactez-moi à <a href="mailto:carteat22@gmail.com">carteat22@gmail.com</a></p>
+		</footer>
 
-.card-content .portfoliop a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
+	</div>
 
-/* ===== Bouton projet ===== */
-.btn-project {
-    align-self: flex-start;
-    padding: 0.6rem 1.8rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background: transparent;
-    color: #ffffff;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
+	<!-- BG -->
+	<div id="bg"></div>
 
-.btn-project:hover {
-    background: #6C3CE1;
-    color: #fff;
-    border-color: #6C3CE1;
-    transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(108, 60, 225, 0.3);
-}
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
 
-/* ===== Animation d'entrée des cartes ===== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+</body>
 
-.topColumn {
-    animation: fadeInUp 0.6s ease forwards;
-    opacity: 0;
-}
-
-.topColumn:nth-child(1) { animation-delay: 0.1s; }
-.topColumn:nth-child(2) { animation-delay: 0.2s; }
-.topColumn:nth-child(3) { animation-delay: 0.3s; }
-.topColumn:nth-child(4) { animation-delay: 0.4s; }
-.topColumn:nth-child(5) { animation-delay: 0.5s; }
-.topColumn:nth-child(6) { animation-delay: 0.6s; }
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-
-/* ===== Tablettes ===== */
-@media screen and (max-width: 1024px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .card-image .cardImg {
-        height: 200px;
-    }
-    
-    .card-content {
-        padding: 1.25rem;
-    }
-}
-
-/* ===== Mobiles ===== */
-@media screen and (max-width: 576px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .card-image .cardImg {
-        height: 200px;
-    }
-    
-    .card-content {
-        padding: 1rem;
-    }
-    
-    .card-content .cardTitle {
-        font-size: 1.1rem;
-    }
-    
-    .topColumn {
-        animation: none;
-        opacity: 1;
-    }
-    
-    .project-card:hover {
-        transform: translateY(-4px) scale(1);
-    }
-    
-    .project-card:hover .card-overlay {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===== Très petits mobiles ===== */
-@media screen and (max-width: 400px) {
-    .card-image .cardImg {
-        height: 160px;
-    }
-    
-    .tech-badge {
-        font-size: 0.55rem;
-        padding: 3px 10px;
-    }
-    
-    .card-content .portfoliop {
-        font-size: 0.8rem;
-    }
-    
-    .btn-project {
-        font-size: 0.7rem;
-        padding: 0.4rem 1.2rem;
-    }
-    
-    .project-status {
-        font-size: 0.5rem;
-        padding: 2px 10px;
-    }
-}
+</html>
