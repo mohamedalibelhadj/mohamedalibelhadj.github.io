@@ -27,11 +27,20 @@
 			border: none;
 			background: none;
 			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			padding: 5px 8px;
+			border-radius: 4px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 14px;
 		}
 
 		.lang-option:hover {
 			opacity: 1;
 			transform: scale(1.1);
+			background: rgba(255,255,255,0.1);
 		}
 
 		.flag-icon {
@@ -39,6 +48,7 @@
 			height: 18px;
 			border-radius: 2px;
 			box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+			object-fit: cover;
 		}
 	</style>
 </head>
@@ -59,14 +69,17 @@
 		<header id="header">
 			<!-- Sélecteur de langue -->
 			<div class="language-switcher">
-				<a href="../index.html" class="lang-option" title="Français">
+				<a href="../fr/index.html" class="lang-option" title="Français">
 					<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+					<span>FR</span>
 				</a>
-				<a href="index.html" class="lang-option" title="English">
-					<img src="https://flagcdn.com/w40/gb.png" alt="Anglais" class="flag-icon">
+				<a href="../en/index.html" class="lang-option" title="English">
+					<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+					<span>EN</span>
 				</a>
-				<a href="../es/index.html" class="lang-option" title="Español">
-					<img src="https://flagcdn.com/w40/es.png" alt="Espagnol" class="flag-icon">
+				<a href="../ar/index.html" class="lang-option" title="العربية">
+					<img src="https://flagcdn.com/w40/dz.png" alt="العربية" class="flag-icon">
+					<span>AR</span>
 				</a>
 			</div>
 
